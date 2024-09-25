@@ -6,8 +6,10 @@ import { Hero } from "./Hero";
 import { Projects } from "./Projects";
 
 export default function App() {
+    const date = new Date();
+
     return (
-        <MantineProvider theme={theme} forceColorScheme="dark">
+        <MantineProvider theme={theme} forceColorScheme={date.getHours() >= 7 && date.getHours() <= 19 ? "light" : "dark"}>
             <Container my={'xl'}>
                 <Header />
                 <Space h={'xl'} />
