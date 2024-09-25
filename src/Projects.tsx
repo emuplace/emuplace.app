@@ -24,7 +24,7 @@ export function Projects() {
         <Grid.Col span={4}>
             <Group justify='center'>
                 <ActionIcon variant='transparent'>
-                    <item.icon color={theme.colors[item.color][5]} size="2rem" />
+                    <item.icon color={theme.colors[item.color][4]} size="2rem" />
                 </ActionIcon>
                 <Text>{item.title}</Text>
             </Group>
